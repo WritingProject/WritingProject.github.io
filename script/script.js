@@ -1,7 +1,7 @@
 $(function(){
  var test = 0;
  $("button").click(function({
-   if(test==0){
+   if(test===0){
     test++;
      $(".title").animate({marginTop: "500"},10000);
    },else{
