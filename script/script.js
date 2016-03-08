@@ -1,12 +1,12 @@
 $(function(){
- var variablevalue = 0;
+ var title = $(".title");
  $("button").click(function({
-   if(variablevalue < 1){
+   if(title.css("margin-top") == "0px"){
     test++;
-     $(".title").animate({marginTop: "500"},10000);
-   },else{
+     title.animate({"margin-top": "500"},10000);
+   } else {
     test--;
-    $(".title").animate({marginTop: "0"},10000);
+    title.animate({"margin-top": "0"},10000);
    };
  }));
 });
